@@ -1,16 +1,734 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0a0b0d" />
-    <meta name="description" content="Efa Spor Aletleri — Spor ekipmanları üretiminde güçlü ve modern çözümler." />
-    <meta property="og:title" content="Efa Spor Aletleri" />
-    <meta property="og:description" content="Gücünü biz üretiyoruz. Efa Spor Aletleri tasarım demosu." />
-    <title>Efa Spor Aletleri | Gücünü Biz Üretiyoruz</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0b0d" />
+  <title>EFA Spor Aletleri | Gücünü Biz Üretiyoruz</title>
+  <meta name="description" content="Efa Spor Aletleri — Profesyonel spor salonları ve spor tesisleri için yerli, sağlam ve modern fitness ve güç ekipmanları üretimi." />
+  <meta property="og:title" content="EFA Spor Aletleri | Gücünü Biz Üretiyoruz" />
+  <meta property="og:description" content="Profesyonel spor alanları için sağlam, işlevsel ve performans odaklı ekipmanlar üretiyoruz." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="nav-shell" id="mainHeader">
+    <a class="brand" href="#top" aria-label="Efa Spor Aletleri Ana Sayfa">
+      <span class="brand-box">EFA</span>
+      <span class="brand-name">SPOR ALETLERİ<small>GÜÇ İÇİN ÜRETİYORUZ</small></span>
+    </a>
+    
+    <nav class="nav-links" id="mainNav" aria-label="Ana Menü">
+      <a href="#urunler">Ürünler</a>
+      <a href="#uretim">Üretim</a>
+      <a href="#bakim-onarim">Bakım & Onarım</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+      <button class="nav-quote" type="button" data-open-quote>
+        Teklif Al
+        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </nav>
+
+    <button class="menu-button" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <svg class="icon-menu" viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <svg class="icon-close" viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true"></span> YERLİ ÜRETİM · GÜÇLÜ MÜHENDİSLİK</p>
+        <h1>GÜCÜNÜ<br /><em>BİZ ÜRETİYORUZ.</em></h1>
+        <p class="hero-text">Profesyonel spor alanları ve ticari fitness tesisleri için yüksek dayanımlı, ergonomik ve performans odaklı metal ekipmanlar tasarlayıp atölyemizde üretiyoruz.</p>
+        
+        <div class="hero-actions">
+          <a class="button primary" href="#urunler">
+            Ürünleri Keşfet 
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button class="button ghost" type="button" data-open-quote>Hızlı Teklif Al</button>
+          <a class="button whatsapp-btn" href="#" data-wa-direct>
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            WhatsApp Hattı
+          </a>
+        </div>
+        
+        <p class="demo-note">Yerli üretim gücüyle projenize özel ölçü ve imalat seçenekleri sunulmaktadır.</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="red-orbit" aria-hidden="true"></div>
+        <figure class="hero-photo-frame">
+          <img src="images/cok-fonksiyonlu-sistem.jpeg" alt="EFA üretimi çok fonksiyonlu kablo ve güç sistemi" width="1200" height="1600" />
+          <figcaption>Çok Fonksiyonlu Sistem · EFA İmalatı</figcaption>
+        </figure>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          PERFORMANS İÇİN TASARLANDI
+        </div>
+      </div>
+
+      <a href="#hakkimizda" class="scroll-cue" aria-label="Aşağı kaydır">
+        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         STATEMENT / HAKKIMIZDA
+    ============================================================ -->
+    <section class="statement" id="hakkimizda">
+      <p class="section-kicker">EFA YAKLAŞIMI</p>
+      <h2>SADECE EKİPMAN DEĞİL,<br /><span>UZUN ÖMÜRLÜ GÜÇ</span> ÜRETİYORUZ.</h2>
+      
+      <div class="value-row">
+        <div>
+          <svg viewBox="0 0 24 24" width="38" height="38" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
+            <path d="M17 18h1"></path><path d="M12 18h1"></path><path d="M7 18h1"></path>
+          </svg>
+          <strong>Yerli Üretim</strong>
+          <p>Aracı olmadan doğrudan atölyeden, her aşaması sıkı mühendislik denetiminden geçen üretim modeli.</p>
+        </div>
+        
+        <div>
+          <svg viewBox="0 0 24 24" width="38" height="38" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+          <strong>Sağlam Konstrüksiyon</strong>
+          <p>Yüksek et kalınlıklı profil demir, robotik kaynak hassasiyeti ve yoğun antrenmana meydan okuyan rijit yapı.</p>
+        </div>
+        
+        <div>
+          <svg viewBox="0 0 24 24" width="38" height="38" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.28 1.28L3 12l5.8 1.9a2 2 0 0 1 1.28 1.28L12 21l1.9-5.8a2 2 0 0 1 1.28-1.28L21 12l-5.8-1.9a2 2 0 0 1-1.28-1.28z"></path>
+            <path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path>
+          </svg>
+          <strong>Modern Tasarım</strong>
+          <p>Salonunuza prestij katan elektrostatik mat fırın boya, konforlu ergonomi ve premium görsel dil.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CATEGORIES / ÜRÜN GRUPLARI
+    ============================================================ -->
+    <section class="categories" id="urunler">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">ÜRÜN GRUPLARI</p>
+          <h2>HER ANTRENMANA<br />GÜÇ KATAN ÇÖZÜMLER</h2>
+        </div>
+        <p>İhtiyacınıza göre özel ölçülendirilip üretilebilen profesyonel ağırlık, bench ve depolama serilerimizi inceleyin.</p>
+      </div>
+
+      <div class="category-grid">
+        <!-- Kart 1 -->
+        <article class="category-card" data-product-key="cok-fonksiyonlu-sistem">
+          <span class="category-no">01</span>
+          <div class="category-image-wrap">
+            <img src="images/cok-fonksiyonlu-sistem.jpeg" alt="EFA üretimi çok fonksiyonlu kablo ve güç sistemi" loading="lazy" style="object-position: center 43%;" />
+          </div>
+          <h3>Çok Fonksiyonlu Sistemler</h3>
+          <p>Profesyonel salonlar için çok yönlü, kablolu ve bağımsız ağırlık kombinasyonlu güç istasyonları.</p>
+          <span class="card-action-link">
+            Detayları & Teknik Özellikleri Gör
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </article>
+
+        <!-- Kart 2 -->
+        <article class="category-card" data-product-key="rack-egimli-bench">
+          <span class="category-no">02</span>
+          <div class="category-image-wrap">
+            <img src="images/rack-egimli-bench.jpeg" alt="EFA üretimi rack ve eğimli bench sistemi" loading="lazy" style="object-position: center 52%;" />
+          </div>
+          <h3>Rack & Bench Sistemleri</h3>
+          <p>Yoğun ve limit antrenmanlara uygun, sertifikalı taşıyıcı çelik şasi ve ergonomik sehpa mekanizmaları.</p>
+          <span class="card-action-link">
+            Detayları & Teknik Özellikleri Gör
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </article>
+
+        <!-- Kart 3 -->
+        <article class="category-card" data-product-key="plaka-stanti-salon">
+          <span class="category-no">03</span>
+          <div class="category-image-wrap">
+            <img src="images/plaka-stanti-salon.jpeg" alt="EFA üretimi ağırlık plakası stantı" loading="lazy" style="object-position: center 48%;" />
+          </div>
+          <h3>Ekipman Stantları</h3>
+          <p>Antrenman alanını düzenleyen, devrilmez tabanlı ve zemin korumalı kompakt depolama çözümleri.</p>
+          <span class="card-action-link">
+            Detayları & Teknik Özellikleri Gör
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCTION / ÜRETİM
+    ============================================================ -->
+    <section class="production" id="uretim">
+      <div class="production-visual">
+        <img src="images/sahada-efa.jpeg" alt="EFA üretimi bench sisteminin spor salonundaki gerçek kullanımı" loading="lazy" />
+        <div class="field-label">
+          <span>SAHADA EFA</span>
+          <small>GERÇEK KULLANIM · GERÇEK PERFORMANS</small>
+        </div>
+      </div>
+      
+      <div class="production-copy">
+        <p class="section-kicker">ÜRETİMDEN ANTRENMAN ALANINA</p>
+        <h2>SAHADA ÇALIŞAN<br />SAĞLAM VE İŞLEVSEL<br /><span>SİSTEMLER.</span></h2>
+        <p>EFA imzalı metal ekipmanlar, sporcuların limitlerini zorladığı salonlarda uzun yıllar sıfır boşluk ve tam kararlılıkla çalışacak endüstriyel kaliteyle üretilir.</p>
+        
+        <ol>
+          <li>
+            <span>01</span>
+            <div>
+              <strong>Tasarım & Planlama</strong>
+              <small>Salon alanına veya özel antrenman hedefine uygun mekanik modelleme.</small>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <strong>Lazer Kesim, Kaynak & İmalat</strong>
+              <small>Atölyemizde hassas kaynak, dayanıklı profil işleme ve fırın boyama.</small>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <strong>Test, Kontrol & Teslim</strong>
+              <small>Ağır yük mekanik testlerinin ardından anahtar teslim sevkiyat.</small>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURED PRODUCTS / ÖNE ÇIKANLAR
+    ============================================================ -->
+    <section class="featured">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">ÖNE ÇIKANLAR</p>
+          <h2>GÜCÜN YENİ FORMU</h2>
+        </div>
+        <p>Atölyemizde seri ve butik olarak üretilen en popüler profesyonel ağırlık istasyonları.</p>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Öne Çıkan 1 -->
+        <article data-product-key="agirlik-plakasi-stanti">
+          <div class="featured-image-wrap">
+            <img src="images/agirlik-plakasi-stanti.jpeg" alt="EFA üretimi metal ağırlık plakası stantı" loading="lazy" style="object-position: center 48%;" />
+          </div>
+          <p>ÜRÜN 01</p>
+          <h3>Ağırlık Plakası Stantı</h3>
+          <span class="product-meta">Olimpik Plaka Taşıyıcı · Rijit Çelik Şasi</span>
+          <div class="product-cta-row">
+            <span class="product-cta-btn">Teknik Özellikleri Gör &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Öne Çıkan 2 -->
+        <article data-product-key="ayarli-bench">
+          <div class="featured-image-wrap">
+            <img src="images/ayarli-bench.jpeg" alt="EFA üretimi ayarlanabilir antrenman bench sehpası" loading="lazy" style="object-position: center 55%;" />
+          </div>
+          <p>ÜRÜN 02</p>
+          <h3>Ayarlanabilir Bench</h3>
+          <span class="product-meta">7 Kademeli Açı Ayarı · Tekerlekli Taşıma</span>
+          <div class="product-cta-row">
+            <span class="product-cta-btn">Teknik Özellikleri Gör &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Öne Çıkan 3 -->
+        <article data-product-key="dambil-stanti">
+          <div class="featured-image-wrap">
+            <img src="images/dambil-stanti.jpeg" alt="EFA üretimi iki katlı metal dambıl stantı" loading="lazy" style="object-position: center 47%;" />
+          </div>
+          <p>ÜRÜN 03</p>
+          <h3>Dambıl Stantı</h3>
+          <span class="product-meta">Çift Katlı Açılı Raf · 10 Çift Kapasite</span>
+          <div class="product-cta-row">
+            <span class="product-cta-btn">Teknik Özellikleri Gör &rarr;</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MAINTENANCE & REPAIR SECTION (BAKIM & ONARIM)
+    ============================================================ -->
+    <section class="maintenance-section" id="bakim-onarim">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">SERVİS & TEKNİK DESTEK</p>
+          <h2>SPOR EKİPMANLARINIZ İÇİN<br /><span>PROFESYONEL BAKIM & ONARIM</span></h2>
+        </div>
+        <p>Mevcut spor salonunuzdaki yıpranmış, arızalı veya revizyon isteyen tüm yerli ve ithal fitness aletlerini atölye güvencesiyle ilk günkü performansına kavuşturuyoruz.</p>
+      </div>
+
+      <div class="maintenance-grid">
+        <!-- Hizmet 1 -->
+        <div class="maintenance-card">
+          <div class="maint-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </div>
+          <span class="maint-badge">Ağır Hizmet</span>
+          <h3>Kablo, Çelik Halat & Makara Değişimi</h3>
+          <p>Yıpranan veya kopan istasyon halatlarının yerine havacılık standartlarında özel çelik özlü, aşınmaz kaplamalı halat presleme ve rulmanlı sessiz makara değişimi.</p>
+          <ul class="maint-features">
+            <li>Özel presli çelik halat imalatı</li>
+            <li>Rulmanlı teflon & döküm makaralar</li>
+            <li>Sürtünmesiz ve sessiz çalışma</li>
+          </ul>
+        </div>
+
+        <!-- Hizmet 2 -->
+        <div class="maintenance-card">
+          <div class="maint-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <span class="maint-badge">Antibakteriyel</span>
+          <h3>Döşeme & Sünger Revizyonu</h3>
+          <p>Yırtılan, sertleşen veya çöken bench, koltuk ve dayama minderlerinin yüksek yoğunluklu dökme sünger ve terletmez kalın deriyle yeniden kaplanması.</p>
+          <ul class="maint-features">
+            <li>Yüksek yoğunluklu (HD) döşeme süngeri</li>
+            <li>Ter ve kimyasala dayanıklı deri</li>
+            <li>Salona özel renk & logo seçenekleri</li>
+          </ul>
+        </div>
+
+        <!-- Hizmet 3 -->
+        <div class="maintenance-card">
+          <div class="maint-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <span class="maint-badge">Yapısal Güç</span>
+          <h3>Kaynak, Şasi & Metal Güçlendirme</h3>
+          <p>Metal yorulması yaşayan, çatlayan veya esneme yapan profil gövdelerin gazaltı kaynağı ve lazer kesim sac takviyeleriyle fabrikasyon standartlarında onarımı.</p>
+          <ul class="maint-features">
+            <li>Gazaltı ve TIG kaynak uygulamaları</li>
+            <li>Lazer kesim destek ve takviye plakaları</li>
+            <li>Rijit şasi gövde doğrultma</li>
+          </ul>
+        </div>
+
+        <!-- Hizmet 4 -->
+        <div class="maintenance-card">
+          <div class="maint-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.9 5.8a2 2 0 0 1-1.28 1.28L3 12l5.8 1.9a2 2 0 0 1 1.28 1.28L12 21l1.9-5.8a2 2 0 0 1 1.28-1.28L21 12l-5.8-1.9a2 2 0 0 1-1.28-1.28z"></path>
+            </svg>
+          </div>
+          <span class="maint-badge">Fabrika Çıkışı</span>
+          <h3>Kumlama & Elektrostatik Fırın Boya</h3>
+          <p>Zamanla çizilen, paslanan veya rengi solan spor ekipmanlarının kumlama işlemiyle temizlenerek fırın boya ile ilk günkü sıfır görünümüne kavuşturulması.</p>
+          <ul class="maint-features">
+            <li>Yüzey kumlama & pas giderme</li>
+            <li>Darbeye dirençli elektrostatik fırın boya</li>
+            <li>Mat siyah, antrasit veya özel kurumsal renkler</li>
+          </ul>
+        </div>
+
+        <!-- Hizmet 5 -->
+        <div class="maintenance-card">
+          <div class="maint-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <span class="maint-badge">Talaşlı İmalat</span>
+          <h3>Yedek Parça İmalatı & Temini</h3>
+          <p>Piyasada bulunmayan, ithal veya eski model makineler için atölyemizde CNC torna ve frezede birebir orijinal ölçüsünde parça üretimi.</p>
+          <ul class="maint-features">
+            <li>Manyetik ağırlık pimleri ve kılavuz miller</li>
+            <li>Özel burç, mil ve rulman kovanları</li>
+            <li>Hızlı yerli üretim çözümü</li>
+          </ul>
+        </div>
+
+        <!-- Hizmet 6 -->
+        <div class="maintenance-card">
+          <div class="maint-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <span class="maint-badge">Düzenli Servis</span>
+          <h3>Periyodik Salon Bakım Anlaşması</h3>
+          <p>Spor salonunuzdaki tüm makinelerin düzenli güvenlik, tork kontrolü, ray yağlama ve kalibrasyon işlemlerini kapsayan kurumsal bakım anlaşmaları.</p>
+          <ul class="maint-features">
+            <li>Aylık/3 aylık düzenli denetim ve bakım</li>
+            <li>Arıza risklerini önceden engelleme</li>
+            <li>Üye güvenliği & ekipman ömrünü uzatma</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bakım CTA Bandı -->
+      <div class="maintenance-banner">
+        <div class="maint-banner-text">
+          <span class="maint-banner-tag">YERİNDE SERVİS & HIZLI MÜDAHALE</span>
+          <h3>Salonunuzdaki arızalar üyelerinizi bekletmesin!</h3>
+          <p>Arızalı makinelerinizin fotoğraflarını veya bakım talebinizi WhatsApp'tan iletin, teknik ekibimiz hızlıca fiyat ve servis takvimi oluştursun.</p>
+        </div>
+        <div class="maint-banner-actions">
+          <button type="button" class="button primary" data-open-quote data-product-name="Bakım & Onarım Hizmeti">
+            Bakım Talebi Oluştur &rarr;
+          </button>
+          <a class="button whatsapp-btn" href="#" data-wa-direct data-wa-msg="Merhaba EFA Spor, salonumuzdaki spor aletleri için bakım/onarım/yedek parça desteği almak istiyoruz.">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            Arıza Hattına Yazın
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT & QUOTE SECTION (İLETİŞİM & TEKLİF)
+    ============================================================ -->
+    <section class="contact-section" id="iletisim">
+      <div class="contact-head">
+        <p class="section-kicker">BİZE ULAŞIN</p>
+        <h2>SALONUNUZ VEYA PROJENİZ İÇİN<br /><span>BİRLİKTE ÜRETELİM</span></h2>
+        <p>Toplu salon kurulumu, butik spor stüdyoları veya tekil ekipman siparişleriniz için doğrudan üreticiden en uygun fiyat teklifini alın.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Sol Panel: İletişim Bilgileri -->
+        <div class="contact-info-panel">
+          
+          <div class="direct-wa-box">
+            <h4>
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              Hızlı WhatsApp Hattı
+            </h4>
+            <p>Atölye ustamız ve satış ekibimizle anında WhatsApp üzerinden görüşebilir, teknik çizim veya fotoğraf iletebilirsiniz.</p>
+            <a class="button whatsapp-btn" href="#" data-wa-direct>
+              WhatsApp'tan Hemen Yazın &rarr;
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <strong>Telefon / İletişim</strong>
+              <a href="tel:+905550000000">+90 (555) 000 00 00</a>
+              <small>Hafta içi 08:30 – 18:30 / Cumartesi 09:00 – 15:00</small>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <strong>E-Posta</strong>
+              <a href="mailto:info@efaspor.com">info@efaspor.com</a>
+              <small>Kurumsal teklif ve şartname gönderimleri için</small>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <strong>İmalathane & Atölye</strong>
+              <p>Metal & Makine Sanayi Bölgesi, Türkiye</p>
+              <small>Atölye randevusuyla yerinde numune incelemesi yapabilirsiniz.</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sağ Panel: Form -->
+        <div class="contact-form-wrap">
+          <h3>Fiyat Teklifi İsteyin</h3>
+          <p>İhtiyaç duyduğunuz ekipmanları ve adeti belirtin, size özel fiyat ve imalat takvimi hazırlayalım.</p>
+          
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cName">Adınız Soyadınız *</label>
+                <input type="text" id="cName" placeholder="Örn: Ahmet Yılmaz" required />
+              </div>
+
+              <div class="form-group">
+                <label for="cPhone">Telefon Numaranız *</label>
+                <input type="tel" id="cPhone" placeholder="05XX XXX XX XX" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cSubject">İlgilendiğiniz Konu / Ürün</label>
+              <select id="cSubject">
+                <option value="Çok Fonksiyonlu Sistemler">Çok Fonksiyonlu Sistemler</option>
+                <option value="Rack ve Bench Sistemleri">Rack ve Bench Sistemleri</option>
+                <option value="Dambıl ve Plaka Stantları">Dambıl ve Plaka Stantları</option>
+                <option value="Bakım & Onarım (Kablo / Makara Değişimi)">Bakım & Onarım (Kablo / Makara Değişimi)</option>
+                <option value="Bakım & Onarım (Döşeme / Sünger Revizyonu)">Bakım & Onarım (Döşeme / Sünger Revizyonu)</option>
+                <option value="Bakım & Onarım (Mekanik / Kaynak / Boya)">Bakım & Onarım (Mekanik / Kaynak / Boya)</option>
+                <option value="Periyodik Salon Bakım Anlaşması">Periyodik Salon Bakım Anlaşması</option>
+                <option value="Komple Salon Projesi">Komple Salon / Tesis Kurulumu</option>
+                <option value="Özel Tasarım İmalat">Özel Ölçü / Butik Metal İmalat</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cMessage">Mesajınız / Notunuz</label>
+              <textarea id="cMessage" placeholder="Projeniz, istediğiniz adetler veya özel talepleriniz..."></textarea>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="button primary">
+                Teklif Talebini Gönder
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <button type="button" class="button whatsapp-btn" id="contactWaSubmitBtn">
+                WhatsApp İle İlet
+              </button>
+            </div>
+            
+            <p class="form-note" style="margin-top: 14px;">* Bilgileriniz yalnızca size teklif sunmak için kullanılır, üçüncü şahıslarla paylaşılmaz.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA STRIP
+    ============================================================ -->
+    <section class="cta">
+      <div>
+        <p class="section-kicker">PROJENİZİ KONUŞALIM</p>
+        <h2>ANTRENMAN ALANINIZ İÇİN<br /><span>DOĞRU GÜCÜ</span> BİRLİKTE ÜRETELİM.</h2>
+      </div>
+
+      <div class="cta-actions">
+        <button type="button" class="button light" data-open-quote>
+          Hızlı Teklif İste 
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        <a class="button whatsapp-dark" href="#" data-wa-direct>
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          WhatsApp İle Yazın
+        </a>
+        <small>Haftanın 6 günü üretim ve teklif danışmanlığı sunulmaktadır.</small>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer>
+      <a class="brand" href="#top">
+        <span class="brand-box">EFA</span>
+        <span class="brand-name">SPOR ALETLERİ<small>GÜÇ İÇİN ÜRETİYORUZ</small></span>
+      </a>
+
+      <p>Profesyonel fitness, vücut geliştirme ve fonksiyonel antrenman tesisleri için endüstriyel kalitede spor ekipmanı imalatı.</p>
+
+      <span>© EFA SPOR ALETLERİ · TÜM HAKLARI SAKLIDIR</span>
+    </footer>
+  </main>
+
+  <!-- ============================================================
+       TEKLİF AL MODALI (QUOTE MODAL)
+  ============================================================ -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" type="button" aria-label="Kapat">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <p class="section-kicker">HIZLI TEKLİF</p>
+        <h3 id="quoteModalTitle">FİYAT TEKLİFİ ALIN</h3>
+        <p>İlgilendiğiniz ekipman veya projeniz hakkında bilgi verin, size özel fiyat hazırlayalım.</p>
+      </div>
+
+      <form id="quoteModalForm">
+        <div class="form-group">
+          <label for="quoteName">Adınız Soyadınız *</label>
+          <input type="text" id="quoteName" placeholder="Adınız Soyadınız" required />
+        </div>
+
+        <div class="form-group">
+          <label for="quotePhone">Telefon Numaranız *</label>
+          <input type="tel" id="quotePhone" placeholder="05XX XXX XX XX" required />
+        </div>
+
+        <div class="form-group">
+          <label for="quoteProductSelect">İlgilenilen Ürün veya Hizmet</label>
+          <select id="quoteProductSelect">
+            <option value="Çok Fonksiyonlu Sistemler">Çok Fonksiyonlu Sistemler</option>
+            <option value="Rack & Bench Sistemleri">Rack & Bench Sistemleri</option>
+            <option value="Ağırlık Plakası Stantı">Ağırlık Plakası Stantı</option>
+            <option value="Ayarlanabilir Bench">Ayarlanabilir Bench</option>
+            <option value="Dambıl Stantı">Dambıl Stantı</option>
+            <option value="Bakım & Onarım Hizmeti">Bakım & Onarım Hizmeti (Genel)</option>
+            <option value="Kablo & Halat Değişimi">Kablo & Halat Değişimi</option>
+            <option value="Döşeme & Sünger Revizyonu">Döşeme & Sünger Revizyonu</option>
+            <option value="Periyodik Salon Bakımı">Periyodik Salon Bakım Anlaşması</option>
+            <option value="Komple Salon Kurulumu">Komple Salon Kurulumu</option>
+            <option value="Diğer / Özel İmalat">Diğer / Özel İmalat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteNote">Eklemek İstediğiniz Not</label>
+          <textarea id="quoteNote" rows="3" placeholder="Ölçü, adet veya renk tercihleriniz..."></textarea>
+        </div>
+
+        <div class="form-submit-row" style="margin-top: 24px;">
+          <button type="submit" class="button primary" style="flex: 1;">
+            Teklifi Gönder
+          </button>
+          <button type="button" class="button whatsapp-btn" id="quoteModalWaBtn" style="flex: 1;">
+            WhatsApp'tan İlet
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ÜRÜN DETAY MODALI (PRODUCT DETAIL MODAL)
+  ============================================================ -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProdTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" type="button" aria-label="Kapat">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <p class="section-kicker" id="modalProdCat">ÜRÜN DETAYI</p>
+        <h3 id="modalProdTitle">Ürün Adı</h3>
+      </div>
+
+      <img id="modalProdImg" src="" alt="Ürün Görseli" class="product-modal-image" />
+
+      <p id="modalProdDesc" style="color: var(--text-dim); font-size: 14px; line-height: 1.7; margin-bottom: 20px;"></p>
+
+      <h4 style="font-family: var(--display); font-size: 20px; color: var(--red); text-transform: uppercase; margin-bottom: 8px;">
+        Teknik Özellikler & İmalat Standardı
+      </h4>
+      
+      <table class="specs-table" id="modalProdSpecs">
+        <!-- JS ile dolacak -->
+      </table>
+
+      <div class="form-submit-row" style="margin-top: 25px;">
+        <button type="button" class="button primary" id="modalQuoteBtn" style="flex: 1;">
+          Bu Ürün İçin Teklif Al
+        </button>
+        <button type="button" class="button whatsapp-btn" id="modalWaBtn" style="flex: 1;">
+          WhatsApp'tan Sor
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+  ============================================================ -->
+  <a href="#" class="floating-wa" data-wa-direct aria-label="WhatsApp üzerinden iletişime geçin" title="WhatsApp Hattı">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="script.js"></script>
+</body>
 </html>
